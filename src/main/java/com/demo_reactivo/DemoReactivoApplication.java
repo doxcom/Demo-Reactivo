@@ -1,4 +1,4 @@
-package com.example.demo_reactivo;
+package com.demo_reactivo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

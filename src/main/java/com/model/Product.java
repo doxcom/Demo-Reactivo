@@ -1,14 +1,20 @@
 package com.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
-
+@Table("productos") //table in db
 public class Product {
+    @Id
+    private Long id;
+    private String name;
+    private Double price;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -20,11 +26,16 @@ public class Product {
         this.name = name;
     }
 
-    public Product(Integer id, String name){
-        this.id = id;
-        this.name = name;
+    public Double getPrice() {
+        return price;
     }
-    private Integer id;
-    private String name;
 
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Product(String name, Double price) {
+        this.name = name;
+        this.price = price;
+    }
 }

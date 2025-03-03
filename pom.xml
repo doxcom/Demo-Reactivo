@@ -46,6 +46,18 @@
 			<artifactId>spring-boot-starter-data-r2dbc</artifactId>
 		</dependency>
 
+		<!-- Kafka -->
+		<dependency>
+			<groupId>org.springframework.kafka</groupId>
+			<artifactId>spring-kafka</artifactId>
+		</dependency>
+
+		<!-- Logback para MDC -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+
 		<!-- H2 Database en modo R2DBC -->
 		<dependency>
 			<groupId>io.r2dbc</groupId>

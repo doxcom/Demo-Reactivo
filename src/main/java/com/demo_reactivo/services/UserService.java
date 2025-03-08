@@ -38,8 +38,15 @@ public class UserService {
                     if(users.getName() !=null) olderUser.setName(users.getName());
                     if(users.getEmail()!=null) olderUser.setEmail(users.getEmail());
                     return olderUser;
-                    //https://www.youtube.com/watch?v=PecY7og5KyI&t=7s minuto 39:29
-                });
+
+                })
+                .flatMap(userRepository::save);  //save on db
+
+    }
+
+    public Mono<Void> deleteUser(Long id){
+     return userRepository.deleteById(id)
+             .switchIfEmpty(Mono.error(new Exception("User not found")));
     }
 
 }

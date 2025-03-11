@@ -21,6 +21,7 @@ public class UserController {
   @GetMapping(value="/users", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
   @ResponseStatus(HttpStatus.ACCEPTED)
   public Flux<Users> findAllUsers(){
+
       return userService.getUsers();
   }
 

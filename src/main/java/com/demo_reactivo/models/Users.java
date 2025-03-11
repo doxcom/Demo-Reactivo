@@ -10,6 +10,7 @@ import org.springframework.data.relational.core.mapping.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class Users {
 
     @Id

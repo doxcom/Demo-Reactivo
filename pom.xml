@@ -60,9 +60,9 @@
 
 		<!-- Database en modo R2DBC -->
 		<dependency>
-			<groupId>org.postgresql</groupId>
+			<groupId>io.r2dbc</groupId>
 			<artifactId>r2dbc-postgresql</artifactId>
-			<version>1.0.7.RELEASE</version>
+			<version>0.8.13.RELEASE</version>
 		</dependency>
 
 		<dependency>
@@ -88,10 +88,6 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-
-
-
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

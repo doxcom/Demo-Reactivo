@@ -15,7 +15,7 @@ public class DBConfig extends AbstractR2dbcConfiguration {
 
     @Override
     public ConnectionFactory connectionFactory() {
-        return ConnectionFactories.get("r2dbc:postgresql://localhost:5433/testdb");
+        return ConnectionFactories.get("r2dbc:postgresql://localhost:5432/testdb");
     }
 
     @Bean
